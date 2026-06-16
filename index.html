@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruna Caroline Serrato | Advocacia Trabalhista em Ponta Grossa - PR</title>
+  
+  <!-- Fontes Premium do Google (Playfair Display & Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS Engine Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Vector Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    // Customizações corporativas do tema
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Inter"', 'sans-serif'],
+          },
+          colors: {
+            background: '#0B0B0C',
+            foreground: '#F4F4F6',
+            card: '#121214',
+            gold: '#C5A880',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --gold: #C5A880;
+      --gradient-gold: linear-gradient(135deg, #EAD4B3 0%, #C5A880 50%, #9E7D55 100%);
+      --shadow-gold: 0 10px 30px -10px rgba(197, 168, 128, 0.4);
+      --gradient-hero: radial-gradient(circle at 75% 25%, rgba(197, 168, 128, 0.15) 0%, transparent 60%), radial-gradient(circle at 15% 80%, rgba(20, 20, 22, 0.6) 0%, #0B0B0C 100%);
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      background-color: #0B0B0C;
+      color: #F4F4F6;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .bg-gradient-gold {
+      background: var(--gradient-gold);
+    }
+
+    .shadow-gold {
+      box-shadow: var(--shadow-gold);
+    }
+
+    .bg-gradient-hero {
+      background: var(--gradient-hero);
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-background text-foreground selection:bg-gold/30 selection:text-white">
+
+  <!-- BOTÃO FIXO FLUTUANTE DE WHATSAPP -->
+  <a href="https://wa.me/5542998102096" target="_blank" rel="noreferrer" aria-label="Contatar pelo WhatsApp" class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-gold text-[#0B0B0C] shadow-gold hover:scale-110 active:scale-95 transition-all duration-300">
+    <i data-lucide="message-circle" class="h-6 w-6 stroke-[2.5]"></i>
+  </a>
+
+  <!-- HEADER NAVBAR -->
+  <header class="absolute top-0 left-0 right-0 z-50">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-12">
+      <!-- Logo do escritório -->
+      <a href="#inicio" class="flex items-center gap-3 group">
+        <img src="bruna-foto.png" alt="Bruna Caroline Serrato Advocacia" class="h-14 w-14 rounded-full object-cover border border-gold/40 transition-transform duration-300 group-hover:scale-105">
+        <div class="hidden sm:block">
+          <div class="font-serif text-sm tracking-[0.25em] text-foreground font-medium transition-colors group-hover:text-gold">BRUNA SERRATO</div>
+          <div class="text-[10px] tracking-[0.3em] text-gray-400 mt-0.5">ADVOCACIA TRABALHISTA</div>
+        </div>
+      </a>
+
+      <!-- Menu de Links -->
+      <ul class="hidden items-center gap-10 text-xs font-medium tracking-[0.2em] lg:flex">
+        <li><a href="#inicio" class="text-foreground/90 hover:text-gold transition duration-200">INÍCIO</a></li>
+        <li><a href="#servicos" class="text-foreground/90 hover:text-gold transition duration-200">SERVIÇOS</a></li>
+        <li><a href="#sobre" class="text-foreground/90 hover:text-gold transition duration-200">SOBRE</a></li>
+        <li><a href="#depoimentos" class="text-foreground/90 hover:text-gold transition duration-200">DEPOIMENTOS</a></li>
+      </ul>
+
+      <!-- Botão Contato Header -->
+      <a href="https://wa.me/5542998102096" target="_blank" rel="noreferrer" class="rounded-full bg-gradient-gold px-6 py-3 text-xs font-semibold tracking-[0.2em] text-[#0B0B0C] shadow-gold hover:opacity-95 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300">
+        FALE CONOSCO
+      </a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="inicio" class="relative overflow-hidden pt-36 pb-24 lg:pt-48 lg:pb-32 bg-gradient-hero">
+    <div class="relative mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2 lg:px-12">
+      <!-- Conteúdo Hero Esquerda -->
+      <div class="flex flex-col justify-center">
+        <div class="inline-flex w-fit items-center gap-2 rounded-full border border-gold/30 bg-gold/5 px-4 py-2 mb-6">
+          <span class="h-1.5 w-1.5 rounded-full bg-gold animate-pulse"></span>
+          <span class="text-[11px] font-medium tracking-[0.25em] text-gold">ESPECIALISTA EM DIREITO TRABALHISTA</span>
+        </div>
+
+        <h1 class="font-serif text-5xl leading-[1.1] tracking-tight text-gold sm:text-6xl lg:text-7xl">
+          Advogada especializada em <br>
+          <span class="italic font-normal text-foreground">Direito Trabalhista</span>
+        </h1>
+
+        <div class="mt-8 space-y-5 text-base leading-relaxed text-gray-400 lg:text-lg">
+          <p>Dra. Bruna Caroline Serrato — <b class="text-foreground">OAB/PR 98.138</b> — atua na defesa de trabalhadores e empregadores com dedicação integral, escuta atenta e estratégia jurídica precisa em cada processo.</p>
+          <p>Com nota <span class="text-gold font-semibold">5,0 ★</span> no Google, o escritório é referência em Ponta Grossa pelo cuidado humanizado e pelos resultados excelentes obtidos na Justiça do Trabalho.</p>
+
+          <div class="pt-2 space-y-3">
+            <p class="flex items-center gap-3 text-sm text-foreground/90 font-medium">
+              <i data-lucide="map-pin" class="h-5 w-5 text-gold shrink-0"></i>
+              Atendimento presencial em Ponta Grossa - PR
+            </p>
+            <p class="flex items-center gap-3 text-sm text-foreground/90 font-medium">
+              <i data-lucide="message-circle" class="h-5 w-5 text-gold shrink-0"></i>
+              Atendimento on-line para todo o Brasil
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-10 flex flex-wrap items-center gap-5">
+          <a href="https://wa.me/5542998102096" target="_blank" rel="noreferrer" class="rounded-full bg-gradient-gold px-8 py-4 text-xs font-semibold tracking-[0.25em] text-[#0B0B0C] shadow-gold hover:opacity-95 hover:scale-[1.03] transition-all duration-300">
+            AGENDAR CONSULTA
+          </a>
+          <a href="#servicos" class="text-xs font-medium tracking-[0.25em] text-foreground hover:text-gold transition duration-200">
+            CONHECER SERVIÇOS →
+          </a>
+        </div>
+      </div>
+
+      <!-- Imagem Hero Direita -->
+      <div class="relative flex justify-center lg:justify-end">
+        <!-- Detalhes de Borda Clássica -->
+        <div class="absolute -top-6 -left-6 h-32 w-32 rounded-tl-[3rem] border-l-2 border-t-2 border-gold/40 lg:h-48 lg:w-48"></div>
+        <div class="absolute -bottom-6 -right-6 h-32 w-32 rounded-br-[3rem] border-b-2 border-r-2 border-gold/40 lg:h-48 lg:w-48"></div>
+        
+        <div class="relative z-10 w-full max-w-md overflow-hidden rounded-3xl border border-gold/15 bg-[#121214]">
+          <img src="bruna-foto.png" alt="Dra. Bruna Caroline Serrato" class="w-full h-auto object-cover aspect-[4/5] object-center hover:scale-105 transition-transform duration-700">
+        </div>
+
+        <!-- Tag OAB -->
+        <div class="absolute top-12 right-0 z-20 rounded-full border border-gold/40 bg-[#0B0B0C]/90 px-5 py-2.5 backdrop-blur lg:top-16 lg:-right-4 shadow-xl">
+          <span class="text-[11px] font-semibold tracking-[0.25em] text-gold">OAB/PR 98.138</span>
+        </div>
+
+        <!-- Google Quality Rating -->
+        <div class="absolute bottom-8 left-0 z-20 rounded-2xl border border-white/5 bg-[#121214]/95 px-6 py-5 backdrop-blur lg:-left-4 shadow-2xl">
+          <div class="flex gap-1">
+            <i data-lucide="star" class="h-4 w-4 fill-gold text-gold"></i>
+            <i data-lucide="star" class="h-4 w-4 fill-gold text-gold"></i>
+            <i data-lucide="star" class="h-4 w-4 fill-gold text-gold"></i>
+            <i data-lucide="star" class="h-4 w-4 fill-gold text-gold"></i>
+            <i data-lucide="star" class="h-4 w-4 fill-gold text-gold"></i>
+          </div>
+          <div class="mt-2 font-serif text-3xl font-medium text-foreground tracking-tight">5,0</div>
+          <div class="text-[9px] tracking-[0.2em] text-gray-400 font-semibold mt-0.5">21 AVALIAÇÕES NO GOOGLE</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRIP DE ESTATÍSTICAS -->
+  <section class="border-y border-white/5 bg-[#121214]/40 backdrop-blur-sm">
+    <div class="mx-auto grid max-w-7xl grid-cols-2 gap-y-10 gap-x-8 px-6 py-12 lg:grid-cols-4 lg:px-12">
+      <div class="text-center lg:text-left">
+        <div class="font-serif text-4xl font-medium text-gold lg:text-5xl">5,0</div>
+        <div class="mt-2 text-[10px] tracking-[0.25em] text-gray-400 font-semibold">NOTA NO GOOGLE</div>
+      </div>
+      <div class="text-center lg:text-left">
+        <div class="font-serif text-4xl font-medium text-gold lg:text-5xl">21+</div>
+        <div class="mt-2 text-[10px] tracking-[0.25em] text-gray-400 font-semibold">AVALIAÇÕES DE CLIENTES</div>
+      </div>
+      <div class="text-center lg:text-left">
+        <div class="font-serif text-4xl font-medium text-gold lg:text-5xl">100%</div>
+        <div class="mt-1 text-[10px] tracking-[0.25em] text-gray-400 font-semibold">ATENDIMENTO HUMANIZADO</div>
+      </div>
+      <div class="text-center lg:text-left">
+        <div class="font-serif text-4xl font-medium text-gold lg:text-5xl">PR</div>
+        <div class="mt-2 text-[10px] tracking-[0.25em] text-gray-400 font-semibold">OAB ATIVA Nº 98.138</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE SERVIÇOS -->
+  <section id="servicos" class="py-24 lg:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-12">
+      <div class="max-w-3xl">
+        <span class="text-[11px] font-semibold tracking-[0.3em] text-gold block mb-3">ÁREAS DE ATUAÇÃO</span>
+        <h2 class="font-serif text-4xl leading-tight text-foreground sm:text-5xl tracking-tight">
+          Soluções jurídicas em <em class="text-gold font-medium italic">Direito do Trabalho</em>
+        </h2>
+        <p class="mt-5 text-gray-400 text-base max-w-xl">
+          Atuação consultiva e contenciosa especializada, sempre pautada pela transparência ampla e foco estratégico nos melhores resultados para cada cliente.
+        </p>
+      </div>
+
+      <!-- Serviços Cards Grid -->
+      <div class="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Card 1 -->
+        <div class="group relative overflow-hidden rounded-2xl border border-white/5 bg-[#121214] p-8 transition-all duration-300 hover:border-gold/40 hover:bg-[#1C1C1F] hover:shadow-gold">
+          <div class="flex h-14 w-14 items-center justify-center rounded-xl border border-gold/30 bg-gold/5 transition-colors duration-300 group-hover:bg-gold/10">
+            <i data-lucide="file-text" class="h-6 w-6 text-gold"></i>
+          </div>
+          <h3 class="mt-6 font-serif text-2xl text-foreground font-medium">Rescisão Indireta</h3>
+          <p class="mt-3 text-sm leading-relaxed text-gray-400 group-hover:text-foreground/85 transition-colors">
+            Análise minuciosa e ação judicial robusta contra empregadores que violam as obrigações fundamentais do contrato de trabalho.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="group relative overflow-hidden rounded-2xl border border-white/5 bg-[#121214] p-8 transition-all duration-300 hover:border-gold/40 hover:bg-[#1C1C1F] hover:shadow-gold">
+          <div class="flex h-14 w-14 items-center justify-center rounded-xl border border-gold/30 bg-gold/5 transition-colors duration-300 group-hover:bg-gold/10">
+            <i data-lucide="briefcase" class="h-6 w-6 text-gold"></i>
+          </div>
+          <h3 class="mt-6 font-serif text-2xl text-foreground font-medium">Verbas Rescisórias</h3>
+          <p class="mt-3 text-sm leading-relaxed text-gray-400 group-hover:text-foreground/85 transition-colors">
+            Garantia e recuperação rápida de todos os valores e direitos financeiros devidos ao trabalhador após o encerramento do contrato.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="group relative overflow-hidden rounded-2xl border border-white/5 bg-[#121214] p-8 transition-all duration-300 hover:border-gold/40 hover:bg-[#1C1C1F] hover:shadow-gold">
+          <div class="flex h-14 w-14 items-center justify-center rounded-xl border border-gold/30 bg-gold/5 transition-colors duration-300 group-hover:bg-gold/10">
+            <i data-lucide="clock" class="h-6 w-6 text-gold"></i>
+          </div>
+          <h3 class="mt-6 font-serif text-2xl text-foreground font-medium">Horas Extras</h3>
+          <p class="mt-3 text-sm leading-relaxed text-gray-400 group-hover:text-foreground/85 transition-colors">
+            Cobrança detalhada e precisa de jornadas abusivas, intervalos suprimidos e de todos os adicionais devidos que não foram pagos.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="group relative overflow-hidden rounded-2xl border border-white/5 bg-[#121214] p-8 transition-all duration-300 hover:border-gold/40 hover:bg-[#1C1C1F] hover:shadow-gold">
+          <div class="flex h-14 w-14 items-center justify-center rounded-xl border border-gold/30 bg-gold/5 transition-colors duration-300 group-hover:bg-gold/10">
+            <i data-lucide="shield-check" class="h-6 w-6 text-gold"></i>
+          </div>
+          <h3 class="mt-6 font-serif text-2xl text-foreground font-medium">Assédio Moral</h3>
+          <p class="mt-3 text-sm leading-relaxed text-gray-400 group-hover:text-foreground/85 transition-colors">
+            Defesa ativa e pedido de indenizações éticas em casos de constrangimentos repetitivos, humilhações e abusos psicológicos de liderança.
+          </p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="group relative overflow-hidden rounded-2xl border border-white/5 bg-[#121214] p-8 transition-all duration-300 hover:border-gold/40 hover:bg-[#1C1C1F] hover:shadow-gold">
+          <div class="flex h-14 w-14 items-center justify-center rounded-xl border border-gold/30 bg-gold/5 transition-colors duration-300 group-hover:bg-gold/10">
+            <i data-lucide="scale" class="h-6 w-6 text-gold"></i>
+          </div>
+          <h3 class="mt-6 font-serif text-2xl text-foreground font-medium">Reconhecimento de Vínculo</h3>
+          <p class="mt-3 text-sm leading-relaxed text-gray-400 group-hover:text-foreground/85 transition-colors">
+            Instrução judicial qualificada para demonstrar relações formais de emprego que foram ocultadas sem registro em carteira (CLT).
+          </p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="group relative overflow-hidden rounded-2xl border border-white/5 bg-[#121214] p-8 transition-all duration-300 hover:border-gold/40 hover:bg-[#1C1C1F] hover:shadow-gold">
+          <div class="flex h-14 w-14 items-center justify-center rounded-xl border border-gold/30 bg-gold/5 transition-colors duration-300 group-hover:bg-gold/10">
+            <i data-lucide="users" class="h-6 w-6 text-gold"></i>
+          </div>
+          <h3 class="mt-6 font-serif text-2xl text-foreground font-medium">Acordos e Negociações</h3>
+          <p class="mt-3 text-sm leading-relaxed text-gray-400 group-hover:text-foreground/85 transition-colors">
+            Intermediação estratégica para viabilizar acordos extrajudiciais ou em juízo, garantindo total segurança, clareza e celeridade legal.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIOGRAFIA E APRESENTAÇÃO -->
+  <section id="sobre" class="relative overflow-hidden border-y border-white/5 bg-[#121214]/40 py-24 lg:py-32">
+    <div class="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2 lg:px-12">
+      <!-- Portfólio de Imagem -->
+      <div class="relative">
+        <div class="absolute -top-4 -left-4 h-24 w-24 rounded-tl-[2rem] border-l-2 border-t-2 border-gold/50 lg:h-32 lg:w-32"></div>
+        <div class="relative max-w-md overflow-hidden rounded-3xl border border-white/5 bg-[#121214]">
+          <img src="bruna-foto.png" alt="Sobre a Dra. Bruna Caroline Serrato" class="w-full h-auto object-cover aspect-[4/5] hover:scale-105 transition-transform duration-700">
+        </div>
+        <div class="absolute -bottom-4 -right-4 h-24 w-24 rounded-br-[2rem] border-b-2 border-r-2 border-gold/50 lg:h-32 lg:w-32"></div>
+      </div>
+
+      <!-- Descrição Profissional -->
+      <div>
+        <span class="text-[11px] font-semibold tracking-[0.3em] text-gold block mb-3">SOBRE A ADVOGADA</span>
+        <h2 class="font-serif text-4xl leading-tight sm:text-5xl text-foreground tracking-tight">
+          Compromisso com cada <em class="text-gold font-medium italic">história</em>
+        </h2>
+        
+        <div class="mt-6 space-y-4 text-base leading-relaxed text-gray-400">
+          <p>
+            Dra. Bruna Caroline Serrato é advogada inscrita na <b class="text-foreground">OAB/PR sob o nº 98.138</b>, com dedicação exclusiva à advocacia trabalhista por meio de um atendimento focado na proximidade técnica e no cuidado individualizado.
+          </p>
+          <p>
+            O escritório, situado estrategicamente no centro de Ponta Grossa - PR, oferece assessoria personalizada de forma presencial e digital. Garantimos acompanhamento profissional em todas as fases do processo — desde o estudo da petição inicial até as últimas esferas de recurso.
+          </p>
+          <p>
+            Acreditamos firmemente que cada processo representa uma história de vida e esforço. Por isso, oferecemos atenção cuidadosa, sigilo profissional estrito e planos judiciais desenhados unicamente para a sua causa.
+          </p>
+        </div>
+
+        <div class="mt-10 grid grid-cols-2 gap-6 pt-6 border-t border-white/5">
+          <div class="border-l-2 border-gold pl-4">
+            <div class="font-serif text-3xl font-medium text-foreground tracking-tight">5,0 ★</div>
+            <div class="mt-1 text-[10px] tracking-[0.2em] text-gray-400 font-semibold">REPUTAÇÃO EXCELENTE GOOGLE</div>
+          </div>
+          <div class="border-l-2 border-gold pl-4">
+            <div class="font-serif text-3xl font-medium text-foreground tracking-tight">Ponta Grossa</div>
+            <div class="mt-1 text-[10px] tracking-[0.2em] text-gray-400 font-semibold">PARANÁ — ATENDIMENTO INTEGRAL</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS REAIS -->
+  <section id="depoimentos" class="py-24 lg:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-12">
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-[11px] font-semibold tracking-[0.3em] text-gold block mb-3">DEPOIMENTOS DE CLIENTES</span>
+        <h2 class="font-serif text-4xl leading-tight sm:text-5xl text-foreground tracking-tight">
+          O que dizem os nossos <em class="text-gold font-medium italic">clientes</em>
+        </h2>
+        
+        <div class="mt-6 flex flex-wrap items-center justify-center gap-1">
+          <i data-lucide="star" class="h-5 w-5 fill-gold text-gold"></i>
+          <i data-lucide="star" class="h-5 w-5 fill-gold text-gold"></i>
+          <i data-lucide="star" class="h-5 w-5 fill-gold text-gold"></i>
+          <i data-lucide="star" class="h-5 w-5 fill-gold text-gold"></i>
+          <i data-lucide="star" class="h-5 w-5 fill-gold text-gold"></i>
+          <span class="ml-2 font-serif text-xl text-foreground font-medium">5,0</span>
+          <span class="text-sm text-gray-400 ml-1">· 21 avaliações públicas no Google</span>
+        </div>
+      </div>
+
+      <!-- Testemunhos Grid -->
+      <div class="mt-16 grid gap-6 md:grid-cols-3">
+        <!-- Depoimento 1 -->
+        <figure class="rounded-2xl border border-white/5 bg-[#121214] p-8 flex flex-col justify-between hover:border-gold/30 transition duration-300">
+          <div>
+            <div class="flex gap-0.5">
+              <i data-lucide="star" class="h-4 w-4 fill-gold text-gold"></i>
+              <i data-lucide="star" class="h-4 w-4 fill-gold text-gold"></i>
+              <i data-lucide="star" class="h-4 w-4 fill-gold text-gold"></i>
+              <i data-lucide="star" class="h-4 w-4 fill-gold text-gold"></i>
+              <i data-lucide="star" class="h-4 w-4 fill-gold text-gold"></i>
+            </div>
+            <blockquote class="mt-5 font-serif text-xl italic leading-snug text-foreground/90">
+              “Excelente. Profissional muito dedicada e de alta competência.”
+            </blockquote>
+          </div>
+          <figcaption class="mt-6 flex items-center gap-3 pt-6 border-t border-white/5">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full border border-gold/40 font-serif text-gold bg-gold/5 font-semibold text-lg">
+              C
+            </div>
+            <div>
+              <div class="text-sm font-medium text-foreground">Carla Serrato</div>
+              <div class="text-[10px] tracking-[0.2em] text-gray-400 font-semibold">CLIENTE VERIFICADO</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- Depoimento 2 -->
+        <figure class="rounded-2xl border border-white/5 bg-[#121214] p-8 flex flex-col justify-between hover:border-gold/30 transition duration-300">
+          <div>
+            <div class="flex gap-0.5">
+              <i data-lucide="star" class="h-4 w-4 fill-gold text-gold"></i>
+              <i data-lucide="star" class="h-4 w-4 fill-gold text-gold"></i>
+              <i data-lucide="star" class="h-4 w-4 fill-gold text-gold"></i>
+              <i data-lucide="star" class="h-4 w-4 fill-gold text-gold"></i>
+              <i data-lucide="star" class="h-4 w-4 fill-gold text-gold"></i>
+            </div>
+            <blockquote class="mt-5 font-serif text-xl italic leading-snug text-foreground/90">
+              “Excelente profissional, uma pessoa correta, de caráter, indico de olhos fechados.”
+            </blockquote>
+          </div>
+          <figcaption class="mt-6 flex items-center gap-3 pt-6 border-t border-white/5">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full border border-gold/40 font-serif text-gold bg-gold/5 font-semibold text-lg">
+              F
+            </div>
+            <div>
+              <div class="text-sm font-medium text-foreground">Flavia Borck</div>
+              <div class="text-[10px] tracking-[0.2em] text-gray-400 font-semibold">CLIENTE VERIFICADO</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- Depoimento 3 -->
+        <figure class="rounded-2xl border border-white/5 bg-[#121214] p-8 flex flex-col justify-between hover:border-gold/30 transition duration-300">
+          <div>
+            <div class="flex gap-0.5">
+              <i data-lucide="star" class="h-4 w-4 fill-gold text-gold"></i>
+              <i data-lucide="star" class="h-4 w-4 fill-gold text-gold"></i>
+              <i data-lucide="star" class="h-4 w-4 fill-gold text-gold"></i>
+              <i data-lucide="star" class="h-4 w-4 fill-gold text-gold"></i>
+              <i data-lucide="star" class="h-4 w-4 fill-gold text-gold"></i>
+            </div>
+            <blockquote class="mt-5 font-serif text-xl italic leading-snug text-foreground/90">
+              “Excelente profissional! Atenciosa e muito comprometida com os prazos. Recomendo demais.”
+            </blockquote>
+          </div>
+          <figcaption class="mt-6 flex items-center gap-3 pt-6 border-t border-white/5">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full border border-gold/40 font-serif text-gold bg-gold/5 font-semibold text-lg">
+              J
+            </div>
+            <div>
+              <div class="text-sm font-medium text-foreground">Jessica Andrade</div>
+              <div class="text-[10px] tracking-[0.2em] text-gray-400 font-semibold">CLIENTE VERIFICADO</div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO E FORMULÁRIO -->
+  <section id="contato" class="relative overflow-hidden border-t border-white/5 py-24 lg:py-32">
+    <div class="absolute inset-0 pointer-events-none bg-gradient-hero"></div>
+    
+    <div class="relative mx-auto max-w-7xl px-6 lg:px-12">
+      <div class="grid gap-16 lg:grid-cols-12">
+        
+        <!-- Detalhes de endereço à esquerda -->
+        <div class="lg:col-span-7">
+          <span class="text-[11px] font-semibold tracking-[0.3em] text-gold block mb-3">FALE CONOSCO</span>
+          <h2 class="font-serif text-4xl leading-tight sm:text-5xl text-foreground tracking-tight">
+            Sua causa merece <em class="text-gold font-medium italic">atenção</em> personalizada
+          </h2>
+          <p class="mt-6 text-gray-400 text-base max-w-lg">
+            Agende uma consulta presencial ou virtual para compreender todos os possíveis caminhos regulamentares e estratégicos do seu processo. Atendimento estritamente sigiloso e humanizado.
+          </p>
+
+          <!-- Itens gráficos de contato -->
+          <div class="mt-12 space-y-6">
+            
+            <!-- WhatsApp -->
+            <a href="https://wa.me/5542998102096" target="_blank" rel="noreferrer" class="group flex items-start gap-4">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-gold/40 bg-gold/5 group-hover:bg-gold/15 transition duration-300">
+                <i data-lucide="phone" class="h-5 w-5 text-gold"></i>
+              </div>
+              <div>
+                <div class="text-[10px] tracking-[0.25em] text-gray-400 font-bold">WHATSAPP / TELEFONE DE CONTATO</div>
+                <div class="font-serif text-2xl text-foreground group-hover:text-gold transition-colors duration-200 mt-1">
+                  (42) 99810-2096
+                </div>
+              </div>
+            </a>
+
+            <!-- Sede Comercial -->
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-gold/40 bg-gold/5">
+                <i data-lucide="map-pin" class="h-5 w-5 text-gold"></i>
+              </div>
+              <div>
+                <div class="text-[10px] tracking-[0.25em] text-gray-400 font-bold">ENDEREÇO DO ESCRITÓRIO</div>
+                <div class="font-serif text-xl text-foreground mt-1">R. Comendador Miró, 1453</div>
+                <div class="text-sm text-gray-400 mt-1">Centro — Ponta Grossa - PR · CEP 84010-160</div>
+              </div>
+            </div>
+
+            <!-- Horários de funcionamento -->
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-gold/40 bg-gold/5">
+                <i data-lucide="clock" class="h-5 w-5 text-gold"></i>
+              </div>
+              <div>
+                <div class="text-[10px] tracking-[0.25em] text-gray-400 font-bold">HORÁRIO DE ATENDIMENTO</div>
+                <div class="font-serif text-xl text-gold mt-1">Segunda a Sexta — até 18h</div>
+              </div>
+            </div>
+
+            <!-- Perfis sociais -->
+            <a href="https://instagram.com/" target="_blank" rel="noreferrer" class="group flex items-start gap-4">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-gold/40 bg-gold/5 group-hover:bg-gold/15 transition duration-300">
+                <i data-lucide="instagram" class="h-5 w-5 text-gold"></i>
+              </div>
+              <div>
+                <div class="text-[10px] tracking-[0.25em] text-gray-400 font-bold">REDES SOCIAIS / INSTAGRAM</div>
+                <div class="font-serif text-xl text-foreground group-hover:text-gold transition-colors duration-200 mt-1">
+                  @brunaserrato.adv
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Formulário rápido e robusto -->
+        <div class="lg:col-span-5">
+          <div class="rounded-3xl border border-white/5 bg-[#121214] p-8 lg:p-10 shadow-2xl relative">
+            <h3 class="font-serif text-2xl text-foreground font-medium mb-2">Mensagem Rápida</h3>
+            <p class="text-xs text-gray-400 mb-6 font-medium">Preencha para iniciar um direcionamento inicial pelo WhatsApp.</p>
+
+            <form id="contactForm" class="space-y-4">
+              <div>
+                <label for="userName" class="block text-[10px] font-semibold tracking-wider text-gray-400 uppercase mb-1.5">
+                  Seu Nome Completo
+                </label>
+                <input 
+                  type="text" 
+                  id="userName" 
+                  required
+                  placeholder="Ex: Carlos Silva" 
+                  class="w-full rounded-xl border border-white/5 bg-background px-4 py-3 text-sm text-foreground placeholder:text-gray-600 focus:border-gold/50 focus:outline-none transition"
+                >
+              </div>
+              
+              <div>
+                <label for="userMessage" class="block text-[10px] font-semibold tracking-wider text-gray-400 uppercase mb-1.5">
+                  Descreva resumidamente sua dúvida
+                </label>
+                <textarea 
+                  id="userMessage" 
+                  rows="4"
+                  placeholder="Ex: Trabalho há 2 anos sem registro em carteira..." 
+                  class="w-full rounded-xl border border-white/5 bg-background px-4 py-3 text-sm text-foreground placeholder:text-gray-600 focus:border-gold/50 focus:outline-none transition resize-none"
+                ></textarea>
+              </div>
+
+              <button 
+                type="submit"
+                class="w-full rounded-xl bg-gradient-gold py-4 text-xs font-semibold tracking-[0.2em] text-[#0B0B0C] shadow-gold duration-300 hover:scale-[1.01] active:scale-[0.99] transition-all"
+              >
+                ENVIAR MENSAGEM VIA WHATSAPP
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ FINAL -->
+  <footer class="border-t border-white/5 bg-[#121214]/60 py-12">
+    <div class="mx-auto flex max-w-7xl flex-col items-center gap-8 px-6 text-center lg:flex-row lg:justify-between lg:text-left lg:px-12">
+      
+      <div class="flex items-center gap-3">
+        <img src="bruna-foto.png" alt="Logo Bruna Serrato" class="h-12 w-12 rounded-full object-cover border border-gold/40">
+        <div>
+          <div class="font-serif text-sm tracking-[0.25em] text-foreground font-medium">BRUNA SERRATO</div>
+          <div class="text-[10px] tracking-[0.3em] text-gray-400 mt-0.5">ADVOCACIA TRABALHISTA · OAB/PR 98.138</div>
+        </div>
+      </div>
+
+      <div class="text-xs text-gray-400 flex flex-col items-center lg:items-end gap-1">
+        <span>© 2026 Bruna Caroline Serrato Advocacia. Todos os direitos reservados.</span>
+        <span class="text-[10px] text-gray-500 flex items-center gap-1.5 mt-1">
+          Desenvolvido com dedicação profissional para Ponta Grossa — PR · 
+          <i data-lucide="heart" class="h-3 w-3 inline text-gold/60 fill-gold/30"></i>
+        </span>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    // Inicialização do Lucide Icons para carregar os ícones em SVG nativo
+    lucide.createIcons();
+
+    // Lógica do envio de WhatsApp pelo formulário de contato
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('userName').value;
+      const text = document.getElementById('userMessage').value;
+      const baseMessage = 'Olá Dra. Bruna! Meu nome é ' + name + '. Gostaria de agendar uma consulta.';
+      const extraMessage = text ? ' Mensagem complementar: ' + text : '';
+      const encodedText = encodeURIComponent(baseMessage + extraMessage);
+      window.open('https://wa.me/5542998102096?text=' + encodedText, '_blank');
+    });
+  </script>
+</body>
+</html>
